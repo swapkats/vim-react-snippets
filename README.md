@@ -118,3 +118,16 @@ Check out [`UltiSnips/javascript.snippets`](UltiSnips/javascript.snippets) to se
 | `cn→`    | `className` |
 | `ref→`   | `ref` |
 | `pp→`    | `${props => props}` |
+
+#### Hooks
+
+| Trigger  | Content |
+| -------: | ------- |
+| `us.s`  | `const [state, setState] = useState('');` |
+| `us.e`  | `useEffect(() => { });`                   |
+| `us.er` | `useEffect(() => { return () => {}; });`  |
+| `us.er` | `useEffect(() => { return () => {}; });`  |
+| `us.c`  | `const context = useContext(ctx);`        |
+| `us.r`  | `const [store, dispatch] = useReducer(storeReducer, initialState);` |
+| `us.cb` | `useCallback(() => {  }, []);` |
+| `us.m`  | `const memo = useMemo(() => {  }, []);` |
