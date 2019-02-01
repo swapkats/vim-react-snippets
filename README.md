@@ -38,14 +38,17 @@ rfc<C-l>
 Will expand to
 
 ```javascript
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './ListItem.css';
 
-const ListItem = ({ ...props }) => (
-  <div className={styles.base}>
+function ListItem({ ...props }) {
+  return (
+    <div className={styles.base}>
 
-  </div>
-);
+    </div>
+  );
+}
 
 ListItem.defaultProps = {
 };
